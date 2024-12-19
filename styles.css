@@ -1,0 +1,28 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+.task-item button {
+    margin-left: 10px;
+}
+
+#taskList {
+    max-height: 100%;
+    padding-bottom: 55px; /* Adding padding at the bottom to ensure the last item isn't cut off */
+}
